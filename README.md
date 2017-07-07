@@ -1,5 +1,8 @@
 # JPA-ManyToOne-OneToMany
 
+@OneToMany(mappedBy="personaContacto", cascade=CascadeType.ALL)
+=>
+
 @JsonManagedReference
 @JsonBackReference
 => Sirve para no crear un bucle infinito. Para indicar quien es el padre e hijo.
